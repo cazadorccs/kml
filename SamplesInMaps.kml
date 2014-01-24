@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Style id="transRedPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
+	
+    <Folder>
+      <name>Polygones</name>
+      <open>0</open>
+      <description>Collection de 2 tracés</description>
+      <Placemark>
+        <name>Batiment 1</name>
+        <styleUrl>#transRedPoly</styleUrl>
+        <Polygon>
+          <extrude>1</extrude>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates> 2.133,47.933,17
+                2.15,47.933,17 2.15,47.923,17
+                2.133,47.923,17 2.133,47.933,17 </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Batiment 2</name>
+        <styleUrl>#transBluePoly</styleUrl>
+        <Polygon>
+          <extrude>1</extrude>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates> 2.1477412771483,47.92827033155257,17
+                2.1478169768481,47.92831408832346,17 2.147852582875,47.92830337469744,17
+                2.1478799945639,47.92825686138789,17 2.1478860101409,47.9282311076138,17
+                2.1478069157288,47.92820250173855,17 2.1478379542653,47.92814027058678,17
+                2.1476732640519,47.92808690214408,17 2.1476022926407,47.92814885429042,17
+                2.1475902778436,47.928128290487,17 2.1475841672237,47.92808171967246,17
+                2.1474852065741,47.92810455874995,17 2.1475067264352,47.92814267949824,17
+                2.1474430712915,47.92812783846172,17 2.1470990714904,47.92851282407603,17
+                2.1476769818632,47.92871815323651,17 2.1479162273783,47.92844918858723,17
+                2.1477260327004,47.92829239604253,17 2.1477412771483,47.92827033155257,17
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+     </Folder>
+    <Folder>
+      <name>CarteOverlay</name>
+      <open>0</open>
+      <GroundOverlay>
+        <name>Affichage d'une image sur la carte</name>
+        <description>Affichage du logo Joomla sur la Sicile</description>
+        <Icon>
+          <href>/images/joomla_logo_black.jpg</href>
+        </Icon>
+        <LatLonBox>
+          <north>47.940</north>
+          <south>47.933</south>
+          <east>2.15</east>
+          <west>2.133</west>
+        </LatLonBox>
+      </GroundOverlay>
+    </Folder>
+    <Folder>
+      <name>AffichageOverlay</name>
+      <open>0</open>
+	  <ScreenOverlay>
+        <name>Affichage position absolue bas droite</name>
+        <visibility>0</visibility>
+        <Icon>
+          <href>/images/globe_puzzel.png</href>
+        </Icon>
+        <overlayXY x="1" y="-1" xunits="fraction" yunits="fraction"/>
+        <screenXY x="1" y="0" xunits="fraction" yunits="fraction"/>
+        <rotationXY x="0" y="0" xunits="fraction" yunits="fraction"/>
+        <size x="0" y="0" xunits="fraction" yunits="fraction"/>
+      </ScreenOverlay>
+      </Folder>
+  </Document>
+</kml>
